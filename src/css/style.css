@@ -156,6 +156,8 @@ header {
   text-transform: uppercase;
   letter-spacing: -1px;
   width: 90%;
+  color: #000;
+  text-decoration: none;
 }
 
 .pincode-folder {
