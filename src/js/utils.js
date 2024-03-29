@@ -102,10 +102,10 @@ export function createFolders() {
       item.id = "folder";
       item.className = "folder";
       item.innerHTML = `
-        <div class="folder-header">
-          <img src="${folderHeadingImg}" alt="folder-header" />
-          <span class="folder-header-text">${name}</span>
-        </div>
+        <a data-link href="/desires" class="folder-header">
+          <img data-link src="${folderHeadingImg}" alt="folder-header" />
+          <span data-link class="folder-header-text">${name}</span>
+        </a>
     `;
       item.href = "/desires";
       container.appendChild(item);

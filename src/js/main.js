@@ -42,7 +42,11 @@ function router() {
 window.addEventListener("click", (e) => {
   if (e.target.matches("[data-link]")) {
     e.preventDefault();
-    history.pushState("", "", e.target.href);
+    if (e.target.href == undefined) {
+      history.pushState("", "", "/desires");
+    } else {
+      history.pushState("", "", e.target.href);
+    }
     router();
   }
 });
@@ -50,4 +54,3 @@ window.addEventListener("click", (e) => {
 // Update router
 window.addEventListener("popstate", router);
 window.addEventListener("DOMContentLoaded", router);
-

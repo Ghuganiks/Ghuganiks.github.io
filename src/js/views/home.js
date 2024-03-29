@@ -1,3 +1,4 @@
+import folderHeadingImg from "/src/assets/folder_heading.svg";
 export default () => /*html*/ `
 <div class="overflow">
 <div class="dialog">
